@@ -1,0 +1,16 @@
+@startuml
+start
+:Ввод N;
+:d = false;
+
+while (N > 0?) is (да)
+    if (N % 10 == 2?) then (да)
+        :d = true;
+        stop
+    endif
+    :N = N / 10;
+endwhile (нет)
+
+:Вывод d;
+stop
+@enduml
