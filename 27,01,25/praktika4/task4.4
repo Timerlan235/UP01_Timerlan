@@ -1,0 +1,20 @@
+@startuml
+start
+
+: Ввод number;
+:Вызов метода v(number);
+if (n < 1) then (Да)
+  :false;
+  stop
+endif
+while (n % 3 == 0) then (Да)
+  : n /= 3;
+endwhile
+if (n == 1) then (Да)
+  : Возвращаем true;
+else (Нет)
+  : Возвращаем false;
+endif
+:Вывести результат;
+stop
+@enduml
