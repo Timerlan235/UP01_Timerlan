@@ -1,0 +1,31 @@
+
+@startuml
+start
+: Ввод v;
+: Ввод z;
+
+switch (v) 
+  case (1)
+    : a = z;
+    : c = a * sqrt(2);
+    : h = c / 2;
+    : S = c * h / 2;
+  case (2)
+    : c = z;
+    : a = c / sqrt(2);
+    : h = c / 2;
+    : S = c * h / 2;
+  case (3)
+    : h = z;
+    : c = h * 2;
+    : a = c / sqrt(2);
+    : S = c * h / 2;
+  case (4)
+    : S = z;
+    : h = sqrt(S);
+    : c = c / sqrt(2);
+    : a = c * h / 2;
+endswitch
+:Ввывод результата;
+stop
+@enduml
