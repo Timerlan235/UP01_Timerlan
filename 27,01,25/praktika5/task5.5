@@ -1,0 +1,23 @@
+
+@startuml
+ start
+:Ввести число u;
+:Ввести число v;
+:Ввести число n;
+:double aPrev = u;
+:double bPrev = v;
+:double sum = 0;
+while(int k = 1; k <= n; k++) 
+:double aCurr = 2 * bPrev + aPrev
+double bCurr = 2 * Math.pow(aPrev, 2) + bPrev
+long factorial = 1;
+while(int i = 2; i <= (k + 1); i++)
+:factorial *= i;
+endwhile 
+:sum += (aCurr * bCurr) / factorial
+                aPrev = aCurr
+                bPrev = bCurr;
+endwhile
+:вывод sum;
+stop
+@endum1
