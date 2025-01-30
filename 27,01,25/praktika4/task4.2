@@ -1,0 +1,46 @@
+@startumlstart
+:Ввод v;
+if (v >= 20 && v <= 69) then (да)
+  :ten = v / 10;
+  :un = v % 10;  
+:string age;
+  switch (ten)
+    case (2)    
+  :age = "Двадцать";
+    case (3)      
+:age = "Тридцать";
+    case (4)      
+:age = "Сорок";
+    case (5)      
+:age = "Пятьдесят";
+    case (6)      
+:age = "Шестьдесят";
+  endswitch
+  if (un == 0) then (да)    
+:age = age + " лет";
+  else (нет)
+    switch (un)
+      case (1)        
+:age = age + " один год";
+      case (2)        
+:age = age + " два года";
+      case (3)        
+:age = age + " три года";
+      case (4)        
+:age = age + " четыре года";
+      case (5)        
+:age = age + " пять лет";
+      case (6)        
+:age = age + " шесть лет";
+      case (7)        
+:age = age + " семь лет";
+      case (8)        
+:age = age + " восемь лет";
+      case (9)        
+:age = age + " девять лет";
+    endswitch
+  endif
+  :Вывод age;
+endif
+stop
+@enduml
