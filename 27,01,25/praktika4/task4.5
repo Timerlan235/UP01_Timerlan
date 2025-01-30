@@ -1,0 +1,16 @@
+@startuml
+start
+:Ввод p ;
+:sum = 0
+dist = 10
+day = 0;
+
+while (sum <= 200?) then (да)
+    :sum = sum + dist;
+    :day = day + 1;
+    :dist = dist + (dist * (p / 100.0));
+endwhile (нет)
+
+:Вывод day  + sum;
+stop
+@enduml
